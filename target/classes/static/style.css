@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header .menuicn {
+    width: 28px;
+    cursor: pointer;
+}
+
+header .searchbar {
+    display: flex;
+    align-items: center;
+}
+
+header .searchbar input {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+header .searchbtn img {
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header .message {
+    display: flex;
+    align-items: center;
+}
+
+header .message .circle {
+    width: 12px;
+    height: 12px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .message img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+header .dp img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Navigation Styles */
+.navcontainer {
+    width: 260px;
+    background-color: #343a40;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.navcontainer .nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navcontainer .nav .nav-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navcontainer .nav .nav-option:hover {
+    background-color: #495057;
+}
+
+.navcontainer .nav .nav-option img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.navcontainer .nav .nav-option h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navcontainer .nav .nav-option a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+/* Main Container Styles */
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.main .searchbar2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .searchbar2 input {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 14px;
+    flex: 1;
+    outline: none;
+}
+
+.main .searchbar2 .searchbtn img {
+    width: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Box Container Styles */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box img {
+    width: 60px;
+}
+
+.topic-heading {
+    font-size: 22px;
+    margin: 0;
+    color: #007bff;
+}
+
+.topic {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .navcontainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 15px;
+    }
+}

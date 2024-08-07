@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+        body {
+            background-color: #f7f9fc;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .dashboard-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .dashboard-header {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-content {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .btn-custom {
+            background: #3498db;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            font-weight: 600;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background: #2980b9;
+        }
+
+        .dashboard-links {
+            margin-top: 30px;
+        }
+
+        .dashboard-links a {
+            display: block;
+            background: #1abc9c;
+            padding: 15px;
+            margin: 10px 0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-links a:hover {
+            background: #16a085;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .dashboard-links .box {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .dashboard-links .box a {
+            color: #ffffff;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+
+        .dashboard-links .box a:hover {
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-header">Welcome to the Voting Application</h1>
+
+        <div class="dashboard-links">
+            <div class="box">
+                <a href="/saveAdmin">Admin Dashboard</a>
+            </div>
+            <div class="box">
+                <a href="/saveVoter">Voter Dashboard</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
